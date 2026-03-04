@@ -1,3 +1,4 @@
+import { ThemeSwitch } from '../ThemeSwitch';
 import styles from './Header.module.scss';
 
 export const Header = () => {
@@ -5,6 +6,9 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.left}>
         <h1>Sports DB</h1>
+      </div>
+      <div className={styles.right}>
+        <ThemeSwitch />
       </div>
     </header>
   );

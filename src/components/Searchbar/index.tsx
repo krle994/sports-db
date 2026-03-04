@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDebounce } from '../../hooks/useDebounce';
 import styles from './Searchbar.module.scss';
 
-const DEFAULT_DEBOUNCE_MS = 300;
+const DEFAULT_DEBOUNCE_MS = 100;
 
 export interface SearchbarProps {
   onSearchChange: (value: string) => void;
