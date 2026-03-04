@@ -34,11 +34,7 @@ describe('LeagueCard', () => {
   });
 
   it('shows N/A when strLeagueAlternate is empty', () => {
-    render(
-      <LeagueCard
-        league={{ ...mockLeague, strLeagueAlternate: '' }}
-      />,
-    );
+    render(<LeagueCard league={{ ...mockLeague, strLeagueAlternate: '' }} />);
     expect(screen.getByText('N/A')).toBeInTheDocument();
   });
 
@@ -87,9 +83,7 @@ describe('LeagueCard', () => {
   it('when isSelected and useSeasonBadge returns badge data, shows badge', () => {
     vi.mocked(useSeasonBadge).mockReturnValue({
       data: {
-        seasons: [
-          { strSeason: '2023-24', strBadge: 'https://badge.example.png' },
-        ],
+        seasons: [{ strSeason: '2023-24', strBadge: 'https://badge.example.png' }],
       },
       isLoading: false,
       isError: false,
