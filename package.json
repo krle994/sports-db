@@ -1,0 +1,35 @@
+{
+  "name": "sports-db",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "postcss-preset-env": "^11.2.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "browserslist": [
+    "defaults",
+    "not dead",
+    "not IE 11"
+  ],
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

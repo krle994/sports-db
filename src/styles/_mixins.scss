@@ -1,0 +1,41 @@
+// ---------------------------------------------------------------------------
+// Breakpoints (mobile-first)
+// ---------------------------------------------------------------------------
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+@mixin respond-to($name) {
+  @if $name == 'sm' {
+    @media (min-width: $bp-sm) {
+      @content;
+    }
+  } @else if $name == 'md' {
+    @media (min-width: $bp-md) {
+      @content;
+    }
+  } @else if $name == 'lg' {
+    @media (min-width: $bp-lg) {
+      @content;
+    }
+  } @else if $name == 'xl' {
+    @media (min-width: $bp-xl) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint: #{$name}. Use sm, md, lg, or xl.";
+  }
+}
+
+@mixin media-min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
