@@ -1,0 +1,47 @@
+@use '../../styles/mixins' as *;
+
+.section {
+  margin: var(--space-2) 0;
+  padding: var(--space-4);
+}
+
+.toolbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+
+  @include respond-to('sm') {
+    flex-direction: row;
+    align-items: flex-end;
+
+    > *:first-child {
+      flex: 1;
+      min-width: 0;
+    }
+
+    > *:last-child {
+      flex-shrink: 0;
+      min-width: 160px;
+    }
+  }
+}
+
+.list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.message {
+  margin: 0;
+  padding: var(--space-4);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+}

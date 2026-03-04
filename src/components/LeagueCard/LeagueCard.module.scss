@@ -1,0 +1,97 @@
+.card {
+  padding: var(--space-4);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-default);
+  box-shadow: var(--shadow-card);
+
+  &[role='button'] {
+    cursor: pointer;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      border-color: var(--color-accent-primary, currentColor);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-primary, currentColor);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.leagueName {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-tight);
+}
+
+.sport {
+  margin: 0 0 var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-accent-secondary);
+}
+
+.alternate {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.badgeWrapper {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.badgePlaceholder,
+.badgeError {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.badgeFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 168px;
+  padding: var(--space-3);
+  background: var(--color-bg-tertiary, rgba(0 0 0 / 0.04));
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border-default);
+}
+
+.badgePlaceholderIcon {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.badgeError {
+  color: var(--color-text-error, #c00);
+}
+
+.badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.badgeImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.badgeLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+}
