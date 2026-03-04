@@ -2,6 +2,8 @@
 
 A React app for browsing sports leagues and seasons, powered by [TheSportsDB](https://www.thesportsdb.com/) API.
 
+### For further information about AI usage and design decisions, consult the [NOTES.md](https://github.com/krle994/sports-db/blob/main/NOTES.md) file
+
 ## Prerequisites
 
 - **Node.js** 18+ (recommend 20+)
