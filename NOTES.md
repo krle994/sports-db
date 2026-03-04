@@ -2,7 +2,7 @@
 
 ## AI tools used
 
-- **Cursor / AI assistant**: Used for scaffolding (project layout, API layer, types, components) and for aligning the implementation with the assignment requirements.
+- **Cursor / AI assistant**: Used for scaffolding (project layout, API layer, types, components, and adding test suites) and for aligning the implementation with the assignment requirements.
 
 ## Design decisions
 
